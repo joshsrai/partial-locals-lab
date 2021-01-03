@@ -1,0 +1,9 @@
+<%= params.inspect %>
+
+<% @students.each do |student| %>
+    <%= render partial: "student", locals: {student: student} %>
+    <% end %>
+
+    <%# On the classroom show page, iterate through each classroom's students and display each of them using our _student.html.erb partial with locals. %>
+
+    <%# Add in search functionality such that users can type in a student name or fragment of a student name and and see all matching results on the students index page. The results should be displayed by rendering a students/_student.html.erb partial.  %>

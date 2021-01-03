@@ -1,11 +1,17 @@
 <ul>
   <li>
-    Name: <%= @student.name %>
+    Name: <%= student.name %>
   </li>
   <li>
-    Birthday: <%= @student.birthday.strftime("%m/%d/%Y")  %>
+    Birthday: <%= student.birthday.strftime("%m/%d/%Y")  %>
   </li>
   <li>
-    Hometown: <%= @student.hometown.capitalize %>
+    Hometown: <%= student.hometown.capitalize %>
   </li>
 </ul>
+
+<%# Refactor the _student.html.erb partial to pass through each rendered student as a local. %>
+
+<%# deleted all the @'s in student %>
+
+<%# Add in search functionality such that users can type in a student name or fragment of a student name and and see all matching results on the students index page. The results should be displayed by rendering a students/_student.html.erb partial.  %>
